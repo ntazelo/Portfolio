@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: #e5e5e5;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: baseline;
+  z-index: 1;
+}
+
+.header > * {
+  margin: 1rem;
+}
+
+.logo__title {
+  color: slateblue;
+}
