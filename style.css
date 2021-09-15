@@ -31,3 +31,52 @@ body {
 .logo__title {
   color: slateblue;
 }
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(./images/Header\ bg@2x.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 9rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 7rem 1rem 0 1rem;
+}
+
+.intro > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.intro__heading {
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.intro__text {
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.intro__contact {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: blue;
+  font-size: 0.9rem;
+}
+
+.intro__social--cont {
+  display: flex;
+}
+
+.intro__social--cont > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
