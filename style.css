@@ -33,17 +33,14 @@ body {
 }
 
 .container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-image: url(./images/Header\ bg@2x.png);
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding-bottom: 9rem;
-  border-bottom-left-radius: 3rem;
+  background-position: bottom;
+  padding-bottom: 5rem;
+  padding-top: 1px;
+  border-bottom-left-radius: 50px;
 }
 
 .intro {
