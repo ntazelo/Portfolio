@@ -21,5 +21,3 @@ If you're new to GitHub and just want to download my portfolio, press the green 
 ## 📝 License
 
 This project is [MIT](https://github.com/ntazelo/Portfolio/blob/main/LICENSE) licensed.
-
- 
