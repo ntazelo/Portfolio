@@ -152,7 +152,10 @@ body {
 
 .list__lng--btn {
   list-style: none;
-  display: flex;
+}
+
+.lng__btn--cont {
+  float: left;
 }
 
 .desc__project {
