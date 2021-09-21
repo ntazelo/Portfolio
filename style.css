@@ -15,6 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: #e5e5e5;
+  width: 100%;
 }
 
 .menu--humb {
@@ -49,7 +50,7 @@ body {
 
 .container {
   background-image: url(./images/Header\ bg@2x.png);
-  min-width: 100vw;
+  width: 100vw;
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,6 +64,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 7rem 1rem 0 1rem;
+}
+
+.list-cont-inp > *:not(:first-child) {
+  margin-bottom: 0.5rem;
 }
 
 .intro > *:not(:last-child) {
@@ -107,7 +112,7 @@ body {
 
 .container__card {
   display: grid;
-  width: 90%;
+  width: 90vw;
   margin: 2rem auto;
   grid-template-rows: repeat(4, max-content);
 }
@@ -328,4 +333,94 @@ body {
 .skill__bord {
   border-bottom: 2px solid #dfe1e6;
   padding-bottom: 1.5rem;
+}
+
+.contact-cont-form {
+  background-image: url(./images/contactform\ background.png);
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  border-top-left-radius: 50px;
+  margin-top: 2rem;
+}
+
+.cont-inp-form {
+  width: 100vw;
+}
+
+.list-cont-inp {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-field {
+  align-self: stretch;
+}
+
+.user-name,
+.user-email,
+.user-message {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+
+.user-name,
+.user-email:focus {
+  outline: none;
+}
+
+.user-message:focus-visible {
+  outline: none;
+}
+
+.cont-btn-form {
+  align-self: flex-start;
+}
+
+.title-form {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 52px;
+}
+
+.text-form {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.title-form,
+.text-form {
+  color: white;
+}
+
+.form-btn-submit {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #396df2;
+  padding: 8px 18px;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+  align-self: flex-start;
+}
+
+.form-btn-submit:active {
+  background-color: white !important;
+  color: #396df2 !important;
+}
+
+.form-btn-submit:hover {
+  background-color: #396df2;
+  color: white;
+  cursor: pointer;
 }
