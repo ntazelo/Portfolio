@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -106,7 +106,7 @@
             A daily selection of privately personalized reads; no accounts or
             sign-ups required.
           </p>
-          <button type="button"  class="link__btn--project"  >See Project</button>
+          <button type="button" class="btn-action">See Project</button>
         </div>
       </div>
       <div class="card">
@@ -145,7 +145,7 @@
               <button type="button" class="lng__btn">javascript</button>
             </li>
           </ul>
-          <button type="button"  class="link__btn--project" >See Project</button>
+          <button type="button" class="btn-action">See Project</button>
         </div>
       </div>
       <div class="card">
@@ -184,7 +184,7 @@
               <button type="button" class="lng__btn">javascript</button>
             </li>
           </ul>
-          <button type="button"  class="link__btn--project" >See Project</button>
+          <button type="button" class="btn-action">See Project</button>
         </div>
       </div>
       <div class="card">
@@ -223,7 +223,7 @@
               <button type="button" class="lng__btn">javascript</button>
             </li>
           </ul>
-          <button type="button"  class="link__btn--project">See Project</button>
+          <button type="button" class="btn-action">See Project</button>
         </div>
       </div>
     </section>
@@ -267,7 +267,7 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="link__btn--resume">Get my resume</button>
+        <button type="button" class="btn-action">Get my resume</button>
       </div>
       <div class="skills__cont">
         <ul class="list__skills--cont">
@@ -315,6 +315,64 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="contact-cont-form">
+      <form
+        action="https://formspree.io/f/mpzkboln"
+        method="POST"
+        class="cont-inp-form"
+      >
+        <ul class="list-cont-inp">
+          <li class="cont-single-field">
+            <h4 class="title-form item-form">Contact me</h4>
+          </li>
+          <li class="cont-single-field">
+            <p class="text-form item-form">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </li>
+          <li class="cont-single-field item-field">
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              class="user-name item-form"
+              pattern="[a-zA-Z][a-zA-Z\s]*"
+              placeholder="Full Name"
+              maxlength="30"
+              required
+            />
+          </li>
+          <li class="cont-single-field item-field">
+            <input
+              type="email"
+              id="mail"
+              name="user_email"
+              class="user-email item-form"
+              placeholder="example@gmail.com"
+              required
+            />
+          </li>
+          <li class="cont-single-field item-field">
+            <textarea
+              id="msg"
+              name="user-message"
+              class="user-message item-form"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here"
+              maxlength="500"
+              required
+            ></textarea>
+          </li>
+          <li class="cont-single-field cont-btn-form">
+            <button type="submit" class="btn-action">Get in Touch</button>
+          </li>
+        </ul>
+      </form>
     </section>
   </body>
 </html>
