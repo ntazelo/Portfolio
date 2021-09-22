@@ -7,7 +7,6 @@
 }
 
 html {
-  width: 100%;
   overflow-x: hidden;
 }
 
@@ -15,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: #e5e5e5;
-  width: 100%;
+  max-width: 100%;
 }
 
 .menu--humb {
@@ -50,11 +49,11 @@ body {
 
 .container {
   background-image: url(./images/Header\ bg@2x.png);
-  width: 100vw;
+  min-width: 100%;
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top right;
   padding-bottom: 5rem;
   padding-top: 1rem;
   border-bottom-left-radius: 50px;
@@ -112,7 +111,7 @@ body {
 
 .container__card {
   display: grid;
-  width: 90vw;
+  max-width: 90%;
   margin: 2rem auto;
   grid-template-rows: repeat(4, max-content);
 }
@@ -217,28 +216,6 @@ body {
   outline: none;
 }
 
-.link__btn--project {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  color: #396df2;
-  padding: 8px 18px;
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  letter-spacing: 0.03em;
-}
-
-.link__btn--project:active {
-  background-color: white !important;
-  color: #396df2 !important;
-}
-
-.link__btn--project:hover {
-  background-color: #396df2;
-  color: white;
-  cursor: pointer;
-}
-
 .about {
   background-color: white;
   border-top-right-radius: 50px;
@@ -252,27 +229,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.link__btn--resume {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  color: #396df2;
-  padding: 8px 18px;
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  letter-spacing: 0.03em;
+.intro__resume button {
   align-self: flex-start;
-}
-
-.link__btn--resume:hover {
-  background-color: #396df2;
-  color: white;
-  cursor: pointer;
-}
-
-.link__btn--resume:active {
-  background-color: white !important;
-  color: #396df2 !important;
 }
 
 .skills__cont {
@@ -340,14 +298,15 @@ body {
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top right;
   padding-bottom: 5rem;
   padding-top: 1rem;
   border-top-left-radius: 50px;
+  position: relative;
 }
 
 .cont-inp-form {
-  width: 100vw;
+  max-width: 100%;
 }
 
 .list-cont-inp {
@@ -401,25 +360,25 @@ body {
   color: white;
 }
 
-.form-btn-submit {
+.btn-action {
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
-  color: #396df2;
+  color: #6070ff;
   padding: 8px 18px;
-  border: 1px solid #396df2;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
   letter-spacing: 0.03em;
-  align-self: flex-start;
+  background-color: #fff;
 }
 
-.form-btn-submit:active {
-  background-color: white !important;
-  color: #396df2 !important;
+.btn-action:active {
+  background-color: #2230d2 !important;
+  color: #fff !important;
 }
 
-.form-btn-submit:hover {
-  background-color: #396df2;
+.btn-action:hover {
+  background-color: #6070ff;
   color: white;
   cursor: pointer;
 }
