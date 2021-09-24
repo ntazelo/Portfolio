@@ -411,6 +411,7 @@ body {
   border-radius: 8px;
   letter-spacing: 0.03em;
   background-color: #fff;
+  transition: ease-in-out 0.3s;
 }
 
 .btn-action:active {
