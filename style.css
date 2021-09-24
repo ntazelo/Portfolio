@@ -34,7 +34,7 @@ body {
 }
 
 .header > * {
-  margin: 1rem;
+  margin: 1rem 8%;
 }
 
 .link__logo {
@@ -65,6 +65,10 @@ body {
   margin: 7rem 1rem 0 1rem;
 }
 
+.lang-cont-list > * {
+  margin-bottom: 1rem;
+}
+
 .list-cont-inp > *:not(:first-child) {
   margin-bottom: 0.5rem;
 }
@@ -76,17 +80,19 @@ body {
 .intro__heading {
   font-weight: 700;
   line-height: 2.5rem;
+  color: #091e42;
 }
 
 .intro__text {
   font-weight: 400;
   line-height: 1.5rem;
+  color: #344563;
 }
 
 .intro__contact {
   text-transform: uppercase;
   text-decoration: none;
-  color: blue;
+  color: #7f8cff;
   font-size: 0.9rem;
 }
 
@@ -101,7 +107,7 @@ body {
 
 .link__social {
   text-decoration: none;
-  color: black;
+  color: #505f79;
 }
 
 .color__circle {
@@ -136,7 +142,16 @@ body {
   width: 100%;
 }
 
-.card__img--cont > *:not(:last-child) {
+.prjct-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.prjct-info-wrapper button {
+  align-self: flex-start;
+}
+
+.prjct-info-wrapper > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -161,7 +176,7 @@ body {
 
 .desc__project {
   font-weight: bold;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .project__info--title {
@@ -221,11 +236,20 @@ body {
   border-top-right-radius: 50px;
 }
 
-.intro__resume {
-  padding-top: 6rem;
+.res-skil-cont {
+  display: flex;
+  flex-direction: column;
 }
 
-.about > .intro__resume > *:not(:first-child) {
+.intro__resume {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.res-skil-cont > .intro__resume > *:not(:first-child) {
   margin-bottom: 1rem;
 }
 
@@ -257,6 +281,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #344563;
 }
 
 .languages__cont {
@@ -270,7 +295,20 @@ body {
   margin: 1rem auto;
   align-items: center;
   padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.lang-cont-list {
+  list-style: none;
+  width: 100%;
+}
+
+.lang-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
   background-color: #f7f7f9;
+  padding: 0.5rem;
   border-radius: 8px;
 }
 
@@ -381,4 +419,154 @@ body {
   background-color: #6070ff;
   color: white;
   cursor: pointer;
+}
+
+.cont-menu-list {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .cont-menu-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu__cont i {
+    display: none;
+  }
+
+  .link-menu {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .menu-list > * {
+    margin-right: 1rem;
+  }
+
+  .intro {
+    width: 75%;
+    margin: 10rem auto 2rem auto;
+  }
+
+  .card__img--cont {
+    flex-direction: row;
+  }
+
+  .prjct-info-wrapper {
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  .prjct-info-wrapper > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .img-wrapper {
+    width: 50%;
+  }
+
+  .container__card {
+    width: 75%;
+  }
+
+  .card-2,
+  .card-4 {
+    flex-direction: row-reverse;
+  }
+
+  .res-skil-cont {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .list__skills--cont {
+    margin-bottom: 0;
+  }
+
+  .intro__resume {
+    width: 40%;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .skills__cont {
+    width: 30%;
+    margin: 0 1rem 0 2rem;
+  }
+
+  .lang-cont-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cont__skill {
+    margin-bottom: 0;
+  }
+
+  .lang-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .cont-inp-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .cont-btn-form {
+    align-self: center;
+  }
+
+  .item-field {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro {
+    width: 60%;
+    margin: 10rem auto 2rem auto;
+  }
+
+  .card__img--cont {
+    flex-direction: row;
+  }
+
+  .prjct-info-wrapper {
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  .prjct-info-wrapper > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .img-wrapper {
+    width: 50%;
+  }
+
+  .card-2,
+  .card-4 {
+    flex-direction: row-reverse;
+  }
+
+  .cont-inp-form {
+    width: 40%;
+    margin: 0 auto;
+  }
 }
