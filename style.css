@@ -80,17 +80,19 @@ body {
 .intro__heading {
   font-weight: 700;
   line-height: 2.5rem;
+  color: #091e42;
 }
 
 .intro__text {
   font-weight: 400;
   line-height: 1.5rem;
+  color: #344563;
 }
 
 .intro__contact {
   text-transform: uppercase;
   text-decoration: none;
-  color: blue;
+  color: #7f8cff;
   font-size: 0.9rem;
 }
 
@@ -105,7 +107,7 @@ body {
 
 .link__social {
   text-decoration: none;
-  color: black;
+  color: #505f79;
 }
 
 .color__circle {
@@ -179,7 +181,7 @@ body {
 
 .desc__project {
   font-weight: bold;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .project__info--title {
@@ -284,6 +286,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #344563;
 }
 
 .languages__cont {
