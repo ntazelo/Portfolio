@@ -428,7 +428,15 @@ body {
   display: none;
 }
 
-@media (min-width: 600px) {
+.rotate {
+  transition: ease-in-out 1s;
+  transform: rotate(360deg);
+}
+
+
+
+
+@media (min-width: 992px) {
   .cont-menu-list {
     list-style: none;
     display: flex;
@@ -452,32 +460,6 @@ body {
   }
 
   .intro {
-    width: 80%;
-    margin: 7rem auto 0 auto;
-  }
-
-  .container__card {
-    width: 75%;
-  }
-
-  .cont-inp-form {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .item-field {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .cont-btn-form {
-    align-self: center;
-  }
-}
-
-@media (min-width: 900px) {
-  .intro {
     width: 75%;
     margin: 10rem auto 2rem auto;
   }
@@ -500,7 +482,7 @@ body {
   }
 
   .container__card {
-    width: 85%;
+    width: 75%;
   }
 
   .card-2,
@@ -529,7 +511,7 @@ body {
 
   .skills__cont {
     width: 30%;
-    margin: 0 1rem 0 0;
+    margin: 0 1rem 0 2rem;
   }
 
   .lang-cont-list {
@@ -554,9 +536,19 @@ body {
     width: 60%;
     margin: 0 auto;
   }
+
+  .cont-btn-form {
+    align-self: center;
+  }
+
+  .item-field {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .intro {
     width: 60%;
     margin: 10rem auto 2rem auto;
@@ -577,10 +569,6 @@ body {
 
   .img-wrapper {
     width: 50%;
-  }
-
-  .container__card {
-    width: 70%;
   }
 
   .card-2,
