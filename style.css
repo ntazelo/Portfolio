@@ -434,9 +434,6 @@ body {
   transform: rotate(360deg);
 }
 
-
-
-
 @media (min-width: 992px) {
   .cont-menu-list {
     list-style: none;
