@@ -155,12 +155,11 @@ body {
 
 .img__card {
   width: 100%;
-  transition: 0.3s;
+  transition: ease 0.3s;
 }
 
 .img__card:hover {
-  transform: scale(1.01);
-  transition-duration: 0.1s;
+  transform: scale(1.03);
 }
 
 .project__info--cont {
@@ -432,6 +431,12 @@ body {
 .rotate {
   transition: ease-in-out 1s;
   transform: rotate(360deg);
+}
+
+.title-form:hover,
+.text-form:hover {
+  transition: ease-in-out 1s;
+  transform: translate(30px);
 }
 
 @media (min-width: 992px) {
