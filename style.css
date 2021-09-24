@@ -157,6 +157,11 @@ body {
 
 .img__card {
   width: 100%;
+  transition: ease 0.3s;
+}
+
+.img__card:hover {
+  transform: scale(1.03);
 }
 
 .project__info--cont {
@@ -408,6 +413,7 @@ body {
   border-radius: 8px;
   letter-spacing: 0.03em;
   background-color: #fff;
+  transition: ease-in-out 0.3s;
 }
 
 .btn-action:active {
@@ -423,6 +429,17 @@ body {
 
 .cont-menu-list {
   display: none;
+}
+
+.rotate {
+  transition: ease-in-out 1s;
+  transform: rotate(360deg);
+}
+
+.title-form:hover,
+.text-form:hover {
+  transition: ease-in-out 1s;
+  transform: translate(30px);
 }
 
 @media (min-width: 992px) {
