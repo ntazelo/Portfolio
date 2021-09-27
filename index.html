@@ -20,7 +20,7 @@
     <title>Document</title>
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <h3 class="logo__title"><a href="#" class="link__logo">My Logo</a></h3>
       <nav class="menu__cont">
         <i class="fas fa-bars fa-lg menu--humb"></i>
@@ -352,7 +352,7 @@
       >
         <ul class="list-cont-inp">
           <li class="cont-single-field">
-            <h4 class="title-form item-form ">Contact me</h4>
+            <h4 class="title-form item-form">Contact me</h4>
           </li>
           <li class="cont-single-field">
             <p class="text-form item-form">
@@ -402,5 +402,18 @@
       </form>
     </section>
     <script src="script.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RVJNCSSCTQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RVJNCSSCTQ");
+    </script>
   </body>
 </html>
