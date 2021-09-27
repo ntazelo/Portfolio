@@ -158,6 +158,7 @@ body {
 .img__card {
   width: 100%;
   transition: ease 0.3s;
+  backface-visibility: hidden;
 }
 
 .img__card:hover {
