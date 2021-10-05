@@ -503,15 +503,32 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.267);
   z-index: 3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
 }
 
-.cont-prjct-det {
-  width: 70vw;
-  margin: 4rem auto 0 auto;
-  position: relative;
+.pop-prjct-det {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 100;
-  height: min-content;
   background-color: #fff;
+}
+
+.pop-proj-info {
+  list-style: none;
+}
+
+.pop-proj-info > li {
+
+}
+
+.cont-list {
+  list-style: none;
 }
 
 @media (min-width: 992px) {
