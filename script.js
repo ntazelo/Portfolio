@@ -4,13 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
   const contPrjctDet = document.createElement('div');
   const heading = document.createElement('h1');
+  const contList = document.createElement('ul');
+  const contListItem = document.createElement('li')
   modal.classList.add('modal-pop-up');
   contPrjctDet.classList.add('cont-prjct-det');
   heading.classList.add('pop-heading-det');
   heading.textContent = 'Tonic';
+  contList.classList.add('pop-proj-info');
   body.appendChild(modal);
   modal.appendChild(contPrjctDet);
   contPrjctDet.appendChild(heading);
+  contPrjctDet.appendChild(contList);
+  contList.appendChild(contListItem);
 });
 const navToggle = document.querySelector('.dis-mobile-menu');
 const mobileMenu = document.querySelector('.mobile-menu');

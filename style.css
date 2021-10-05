@@ -659,3 +659,7 @@ body {
     margin: 0 auto;
   }
 }
+
+.pop-proj-info {
+  list-style: none;
+}
