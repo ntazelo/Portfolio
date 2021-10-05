@@ -19,6 +19,7 @@ body {
 
 .menu--humb {
   color: slateblue;
+  display: none;
 }
 
 .header {
@@ -466,13 +467,14 @@ body {
   height: 100vh;
   background-color: #6070ff86;
   z-index: 2;
+  display: none;
 }
 
 .dis-mobile-menu {
   position: absolute;
   right: 4rem;
   top: 4rem;
-  background-color: #6070ff86;
+  background-color: transparent;
   color: #fff;
   border: none;
 }
@@ -483,21 +485,15 @@ body {
   flex-direction: column;
   margin: 5rem 0 0 2rem;
 }
- 
-.cont-mobile-menu-list > *:not(:last-child) {
-
-}
 
 .link-mobile-menu {
-  text-decoration: none;  
+  text-decoration: none;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
 }
-
- 
 
 @media (min-width: 992px) {
   .cont-menu-list {
