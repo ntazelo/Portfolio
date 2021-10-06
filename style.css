@@ -17,8 +17,15 @@ body {
   max-width: 100%;
 }
 
-.menu--humb {
+#open {
   color: slateblue;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+#open:hover {
+  opacity: 1;
 }
 
 .header {
@@ -30,7 +37,7 @@ body {
   left: 0;
   justify-content: space-between;
   align-items: baseline;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header > * {
@@ -255,6 +262,10 @@ body {
   margin: auto;
 }
 
+.cont-mobile-menu-list > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 .res-skil-cont > .intro__resume > *:not(:first-child) {
   margin-bottom: 1rem;
 }
@@ -372,15 +383,24 @@ body {
   width: 100%;
   padding: 0.5rem;
   font-family: inherit;
+  border-radius: 5px;
+  border: none;
 }
 
-.user-name,
-.user-email:focus {
-  outline: none;
-}
-
+.user-name:focus-visible,
+.user-email:focus-visible,
 .user-message:focus-visible {
   outline: none;
+  background-color: gold;
+  color: black;
+  border: none;
+}
+
+.user-name:focus,
+.user-email:focus,
+.user-message:focus {
+  outline: none;
+  border: none;
 }
 
 .cont-btn-form {
@@ -441,6 +461,80 @@ body {
 .text-form:hover {
   transition: ease-in-out 1s;
   transform: translate(30px);
+}
+
+.mobile-menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6070ffed;
+  z-index: 2;
+  display: none;
+}
+
+.dis-mobile-menu {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.cont-mobile-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 0 2rem;
+}
+
+.link-mobile-menu {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.close-mob-menu {
+  display: none !important;
+}
+
+.open-mob-menu {
+  display: block !important;
+  position: absolute;
+  z-index: 400000;
+}
+
+.icon-cont {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem 8%;
+  font-size: 2.5rem;
+  transform: translate(0.2rem, -1rem);
+  cursor: pointer;
+}
+
+.time-close {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.9;
+  line-height: 1rem;
+  transition: opacity 0.3s;
+}
+
+.time-close:hover {
+  opacity: 1;
+}
+
+.time-close:active {
+  color: white;
 }
 
 @media (min-width: 992px) {
