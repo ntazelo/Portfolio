@@ -515,17 +515,6 @@ body {
   transform: translate(30px);
 }
 
-#open {
-  color: slateblue;
-  cursor: pointer;
-  opacity: 0.8;
-  transition: all 0.3s;
-}
-
-#open:hover {
-  opacity: 1;
-}
-
 .mobile-menu {
   margin: 0;
   padding: 0;
