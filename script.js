@@ -1,5 +1,3 @@
-/* eslint-disable space-in-parens */
-/* eslint-disable no-trailing-spaces */
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.logo__title').classList.add('rotate');
   const modal = document.createElement('div');
@@ -78,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // pop up part
   body.appendChild(modal);
   body.appendChild(contPrjctDet);
-  
   contPrjctDet.appendChild(contDetailwrapper);
   contDetailwrapper.appendChild(close);
   contDetailwrapper.appendChild(heading);
@@ -411,7 +408,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     btn.addEventListener('click', popDetail);
   });
-   
   function closeModal() {
     modal.style.display = 'none';
     contPrjctDet.style.display = 'none';
