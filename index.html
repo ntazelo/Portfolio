@@ -36,7 +36,8 @@
     <header class="header">
       <h3 class="logo__title"><a href="#" class="link__logo">My Logo</a></h3>
       <nav class="menu__cont">
-        <i class="fas fa-bars fa-lg menu--humb"></i>
+        <i id="open" class="fas fa-bars fa-lg"></i>
+
         <ul class="cont-menu-list">
           <li class="menu-list">
             <a href="#portfolio" class="link-menu">Portfolio</a>
@@ -52,10 +53,9 @@
     </header>
 
     <nav class="mobile-menu">
-      <button type="button" class="dis-mobile-menu">
-        <i class="fas fa-times fa-2x"></i>
-      </button>
-
+      <div class="icon-cont">
+        <a href="#" class="time-close">&times;</a>
+      </div>
       <ul class="cont-mobile-menu-list">
         <li class="menu-mobile-list">
           <a href="#portfolio" class="link-mobile-menu">Portfolio</a>
@@ -68,6 +68,7 @@
         </li>
       </ul>
     </nav>
+
 
     <section class="container">
       <div class="intro">
