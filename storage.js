@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 userName.addEventListener('input', () => {
   const localData = JSON.parse(localStorage.getItem('data'));
   const data = {
-    ...localData,
+    localData,
     name: userName.value,
   };
   localStorage.setItem('data', JSON.stringify(data));
