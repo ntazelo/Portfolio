@@ -130,7 +130,8 @@ body {
 }
 
 .card {
-  width: 100%;
+  max-width: 900px;
+  min-height: 20rem;
   margin: 1rem auto;
   border: 1px solid #dfe1e6;
   background-color: white;
@@ -149,6 +150,12 @@ body {
   width: 100%;
 }
 
+.img__card {
+  width: 100%;
+  transition: ease 0.3s;
+  backface-visibility: hidden;
+}
+
 .prjct-info-wrapper {
   display: flex;
   flex-direction: column;
@@ -160,12 +167,6 @@ body {
 
 .prjct-info-wrapper > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-.img__card {
-  width: 100%;
-  transition: ease 0.3s;
-  backface-visibility: hidden;
 }
 
 .img__card:hover {
@@ -479,6 +480,7 @@ body {
   letter-spacing: 0.03em;
   background-color: #fff;
   transition: ease-in-out 0.3s;
+  text-decoration: none;
 }
 
 .btn-live {
