@@ -10,13 +10,14 @@ window.addEventListener('load', () => {
   }
 });
 
-userName.addEventListener('input', () => {
+userName.addEventListener('keypress', (event) => {
+  console.log(event.type);
   const localData = JSON.parse(localStorage.getItem('data'));
   const data = {
     ...localData,
     name: userName.value,
   };
-  localStorage.setItem('data', JSON.stringify(data));
+  localStorage.setItem('data', JSON.parse(data));
 });
 
 email.addEventListener('input', () => {

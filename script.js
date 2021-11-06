@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // card section part
   const projectInfoCard = [
     {
-      img: { url: './images/SnapshootPortfolio.png', alt: 'project' },
+      img: { url: './images/todo.png', alt: 'project' },
       title: 'Tonic',
       prj_info: {
         title: 'Canopy',
@@ -268,24 +268,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const projectInfo = {
     project1: {
-      title: 'Tonic',
+      title: 'Todo App',
       prj_info: {
-        title: 'Canopy',
+        title: 'Microverse Project',
         class: 'fa-circle',
         job: 'Back End Dev',
-        year: 2015,
+        year: 2021,
       },
-      url_img: './images/SnapshootPortfolio.png',
+      url_img: './images/todo.png',
       text_content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       languages: ['html', 'css', 'javascript'],
       button_live: {
-        url: '#',
+        url: 'https://ntazelo.github.io/Todo-List/',
         icon_class: 'fa-life-ring',
         btn_live: 'See live',
       },
       button_source: {
-        url: '#',
+        url: 'https://github.com/ntazelo/Todo-List',
         icon_class: 'fa-github-square',
         btn_source: 'See Source',
       },
@@ -397,6 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i = 0; i < projectInfo[btn.id].languages.length; i += 1) {
         langBtn[i].textContent = projectInfo[btn.id].languages[i];
       }
+
+      buttonLive.setAttribute('href', `${projectInfo[btn.id].button_live.url}`);
+      buttonSource.setAttribute('href', `${projectInfo[btn.id].button_source.url}`);
       btnLiveText.textContent = projectInfo[btn.id].button_live.btn_live;
       btnSourceText.textContent = projectInfo[btn.id].button_source.btn_source;
       btnLiveIcon.classList.add(
