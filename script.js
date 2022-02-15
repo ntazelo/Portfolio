@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       url_img: './images/todo.png',
       text_content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        'This is a simple To Do app built with HTML , CSS, and Plain Javascript. It has the feature to add, edit , or delete a To Do and each action taken is persisted to the localstorage',
       languages: ['html', 'css', 'javascript'],
       button_live: {
         url: 'https://ntazelo.github.io/Todo-List/',

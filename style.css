@@ -151,6 +151,7 @@ body {
 }
 
 .img__card {
+  height: 100%;
   width: 100%;
   transition: ease 0.3s;
   backface-visibility: hidden;
@@ -715,6 +716,7 @@ body {
 
   .img-wrapper {
     width: 50%;
+    height: 100%;
   }
 
   .container__card {
